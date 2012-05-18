@@ -29,7 +29,8 @@ class RelativedeltaField(models.Field):
                                  months  = months,
                                  days    = days,
                                  hours   = hours,
-                                 minutes = minutes)
+                                 minutes = minutes,
+                                 seconds = seconds)
         elif isinstance(value, relativedelta):
             return value
         else:
